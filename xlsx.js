@@ -20324,7 +20324,7 @@ function readSync(data, opts) {
 }
 
 function readFileSync(filename, opts) {
-	var o = opts||{type: 'file'};
+	var o = opts||{}; o.type = 'file';
 	return readSync(filename, o);
 }
 function write_cfb_ctr(cfb, o) {
